@@ -1,20 +1,10 @@
-os ::= pulse_secure | junos | palo_alto | aruba_os | avaya_nortel | avaya_ers | avaya_vsp_9000 | brocade_vdx | brocade_mlx | brocade_icx | brocade_cer | cisco | f5 | a10 | linux
-
 type ::= number | text | ip | mac | oid | table type type
 
-comment ::= '#' ...
+oid :: number;
+oid :: text;
+oid :: ip;
+oid :: mac;
 
-os0:
-  oid0 :: type; -- these are only scoped here
-  oid1 :: type;
-  oid2 :: type;
-  oid3 :: type;
-  oid4 :: type;
-os1:
-  oid0 :: type;
-  oid1 :: type;
-
+comments: single-comments. '#'
 tables cannot be nested
 no polymorphism
-
-
